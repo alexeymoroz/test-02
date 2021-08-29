@@ -1,0 +1,46 @@
+@import '../../partials';
+
+.section {
+    padding: 100px 0;
+
+    &__header {
+        &--center {
+            .section__title,
+            .section__description {
+                text-align: center;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 46px;
+        color: $primary;
+        font-weight: 900;
+        text-transform: uppercase;
+        position: relative;
+
+        &:after {
+            content: '~~~~~~~~ :: ~~~~~~~~';
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            color: #7e8287;
+        }
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 2;
+        margin-top: 75px;
+        max-width: 885px;
+        margin-left: auto;
+        margin-right: auto;
+
+        span {
+            font-weight: 900;
+            font-size: 23px;
+        }
+    }
+}

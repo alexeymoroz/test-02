@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "icon": "bulb",
+        "title": "Title goes here",
+        "text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+    }, {
+        "id": 2,
+        "icon": "pen",
+        "title": "Title goes here",
+        "text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+    }, {
+        "id": 3,
+        "icon": "detail",
+        "title": "Title goes here",
+        "text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+    }, {
+        "id": 4,
+        "icon": "computer",
+        "title": "Title goes here",
+        "text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+    }
+]

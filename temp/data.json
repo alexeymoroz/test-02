@@ -1,0 +1,70 @@
+{
+	"about": [
+		{
+			"id": 1,
+			"icon": "images/about/about-01.svg",
+			"title": "Title goes here",
+			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 2,
+			"icon": "images/about/about-02.svg",
+			"title": "Title goes here",
+			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 3,
+			"icon": "images/about/about-03.svg",
+			"title": "Title goes here",
+			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 4,
+			"icon": "images/about/about-04.svg",
+			"title": "Title goes here",
+			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		}
+	],
+	"menu": [
+		{
+			"id": 1,
+			"title": "Home",
+			"href": "#",
+			"target": "",
+			"cssClass": "",
+			"items": []
+		},
+		{
+			"id": 2,
+			"title": "About me",
+			"href": "#",
+			"target": "",
+			"cssClass": "",
+			"items": []
+		},
+		{
+			"id": 3,
+			"title": "Services",
+			"href": "#",
+			"target": "",
+			"cssClass": "",
+			"items": []
+		},
+		{
+			"id": 4,
+			"title": "My work",
+			"href": "#",
+			"target": "",
+			"cssClass": "",
+			"items": []
+		},
+		{
+			"id": 5,
+			"title": "Contact me",
+			"href": "#",
+			"target": "",
+			"cssClass": "",
+			"items": []
+		}
+	]
+}

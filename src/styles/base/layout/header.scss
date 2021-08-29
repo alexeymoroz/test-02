@@ -1,0 +1,30 @@
+@import '../../partials';
+
+.header {
+    background: $primary;
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $white;
+        font-size: 26px;
+
+        &:hover {
+            color: $white;
+        }
+
+        span {
+            color: #cfc91d;
+        }
+    }
+}

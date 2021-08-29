@@ -1,0 +1,40 @@
+@import '../../partials';
+
+.about {
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        justify-content: space-between;
+    }
+
+    &__item {
+        text-align: center;
+        color: $gray;
+        padding: 35px 60px;
+        position: relative;
+        width: calc(100% / 4);
+        border-right: 1px solid #d9dbdb;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    &__icon {
+        margin-left: auto;
+        margin-right: auto;
+        color: $primary;
+        font-size: 30px;
+    }
+
+    &__title {
+        font-weight: 900;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-size: 11px;
+    }
+}
