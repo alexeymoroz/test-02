@@ -1,0 +1,15 @@
+@import '../../partials';
+
+.contact {
+    background: #0b0b0b;
+    color: $white;
+    padding: 60px 0;
+}
+
+.section.section--contact {
+    padding-bottom: 0;
+    
+   .section__content {
+        margin-top: 70px;
+   }
+}

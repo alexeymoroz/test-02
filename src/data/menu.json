@@ -8,28 +8,28 @@
 }, {
     "id": 2,
     "title": "About me",
-    "href": "#",
+    "href": "#about",
     "target": "",
     "cssClass": "",
     "items": []
 }, {
     "id": 3,
     "title": "Services",
-    "href": "#",
+    "href": "#services",
     "target": "",
     "cssClass": "",
     "items": []
 }, {
     "id": 4,
     "title": "My work",
-    "href": "#",
+    "href": "#portfolio",
     "target": "",
     "cssClass": "",
     "items": []
 }, {
     "id": 5,
     "title": "Contact me",
-    "href": "#",
+    "href": "#contact",
     "target": "",
     "cssClass": "",
     "items": []

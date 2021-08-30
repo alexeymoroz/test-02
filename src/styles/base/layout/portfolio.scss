@@ -1,0 +1,62 @@
+@import '../../partials';
+
+.portfolio {
+    margin-top: 80px;
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;       
+    }
+
+    &__item {
+        position: relative;
+
+        &:hover {
+            .portfolio__content {
+                opacity: 1;
+            }
+        }
+
+        @include col(4, 0px);
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 60%;
+
+        @include img-cover();
+    }
+
+    &__content {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        right: 30px;
+        bottom: 20px;
+        background: rgba($primary, 0.85);
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        opacity: 0;
+        text-align: center;
+        transition: opacity 500ms;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        font-size: 13px;
+    }
+}
+
+.section.section--portfolio {
+    padding-bottom: 0;
+}

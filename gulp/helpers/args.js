@@ -36,11 +36,11 @@ if (debug) {
         console.log(`${chalk.bold.bgYellowBright(`Укажите имя проекта`)}\nВ файле ${chalk.italic.bgWhiteBright(`/package.json`)} установлено имя текущей сборки, замените его на собственное.`);
     };
 
-    if (pjson.repository.url === `https://github.com/digikid/gulp-project.git`) {
+    if (pjson.repository.url === ``) {
         console.log(`${chalk.bold.bgYellowBright(`Укажите ссылку на репозиторий`)}\nВ файле ${chalk.italic.bgWhiteBright(`/package.json`)} указана ссылка на репозиторий сборки, замените её на актуальную.`);
     };
 
-    if (pjson.author.includes(`digikid`)) {
+    if (pjson.author.includes(``)) {
         console.log(`${chalk.bold.bgYellowBright(`Укажите авторство`)}\nВ файле ${chalk.italic.bgWhiteBright(`/package.json`)} укажите своё имя и контактные данные, либо оставьте поле пустым.`);
     };
 

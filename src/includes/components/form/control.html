@@ -1,0 +1,55 @@
+<div class="form__control@@if(context.layout){ form__control--@@layout}@@if(context.required){ is-required}@@if(context.verify){ is-verified}@@if(context.hidden){ is-hidden}"@@if(context.field){ data-field-index="1"}>
+    @@if(label && type !== 'checkbox' && type !== 'radio') {
+    <label class="form__label" for="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}">
+        @@label
+        @@if(context.required){<span class="form__required">*</span>}
+        @@if(context.tooltip){<span class="form__tooltip" data-tooltip="@@tooltip"></span>}
+        @@if(context.tooltipImage){<span class="form__tooltip" data-tooltip-image="@@tooltipImage"></span>}
+        @@if(context.ref){<span class="form__tooltip" data-ref="@@ref"></span>}
+    </label>}
+
+    @@if(type === 'file') {
+    <div class="form__loader" data-file-upload@@if(context.accept){ data-accept="@@accept"}@@if(context.multiple){ data-multiple}@@if(context.orientation){ data-orientation="@@orientation"}@@if(context.limit){ data-limit="@@limit"}>
+        <input class="form__input" type="text" @@if(context.required){ required}@@if(context.placeholder){ placeholder="@@placeholder"}>
+        <input class="form__file" type="file" id="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}" name="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}" hidden data-input-name="@@id-@@name[]">
+        <button class="form__upload">Выбрать</button>
+        <i class="form__reset"></i>
+    </div>}
+
+    @@if(type === 'date'){
+    <input class="form__input" type="text" id="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}" name="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}"@@if(context.required){ required}@@if(context.value){ value="@@value"} data-date>}
+
+    @@if(type == 'textarea'){
+    <textarea class="form__textarea" id="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}" name="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}"@@if(context.required){ required}@@if(context.placeholder){ placeholder="@@placeholder"}@@if(context.maxlength){ maxlength="@@maxlength"}@@if(name === 'locality'){ data-@@name}@@if(context.suggest){ data-suggest="@@suggest"}@@if(context.validate === true){ data-validate}@@if(context.validate && context.validate !== true){ data-validate="@@validate"}>@@if(context.value){@@value}</textarea>}
+
+    @@if(type == 'select' && context.options){
+    <select name="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}" id="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}"@@if(context.required){ required}@@if(context.readonly){ readonly}@@if(name === 'district' || name === 'subject'){ data-@@name}@@if(context.value){ data-value="@@value"}>
+        @@if(context.disabled){
+        <option hidden disabled selected value>Не выбрано</option>}
+        @@if(Array.isArray(options)){
+        @@for(var i = 0; i < options.length; i++){
+        <option value="`+options[i].value+`">`+options[i].title+`</option>}}
+        @@if(typeof options === 'string'){
+        @@loop('items/form/option.html', '/data/forms/@@options.json')}
+    </select>}
+
+    @@if(type == 'symbols' && context.options){
+    <div class="form__symbols">
+        @@if(Array.isArray(options)){
+        @@for(var i = 0; i < options.length; i++){
+        <div class="form__symbol">
+            <input type="checkbox" value="`+options[i].icon+`" id="@@id-`+options[i].icon+(context.field && '_1' || '')+`" name="@@id-`+options[i].icon+(context.field && '_1' || '')+`" />
+            <label for="@@id-`+options[i].icon+(context.field && '_1' || '')+`">
+                <i class="icon icon--`+options[i].icon+`"></i>
+            </label>
+        </div>}}
+        @@if(typeof options === 'string'){
+        @@loop('items/form/symbol.html', '/data/forms/@@options.json')}
+    </div>}
+
+    @@if(type !== 'textarea' && type !== 'select' && type !== 'date' && type !== 'file' && type !== 'symbols'){
+    <input class="form__@@if(type !== 'checkbox' && type !== 'radio'){input}@@if(type === 'checkbox' || type === 'radio'){@@type}" type="@@if(!type){text}@@if(type){@@type}" id="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}" name="@@if(id !== 'recovery'){@@id-}@@name@@if(context.field){_1}@@if(context.index){-{index}}"@@if(context.value){ value="@@value"}@@if(context.required){ required}@@if(context.disabled || context.readonly){ readonly}@@if(context.placeholder){ placeholder="@@placeholder"}@@if(context.checked){ checked}@@if(name === 'locality'){ data-@@name}@@if(context.suggest){ data-suggest="@@suggest"}@@if(context.validate === true){ data-validate}@@if(context.validate && context.validate !== true){ data-validate="@@validate"}>}
+
+    @@if(label && (type == 'checkbox' || type == 'radio')){
+    <label for="@@id-@@name@@if(context.field){_1}@@if(context.index){-{index}}">@@label</label>}
+</div>

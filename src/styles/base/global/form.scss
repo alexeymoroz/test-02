@@ -52,8 +52,10 @@ textarea {
         width: 100%;
         max-width: 100%;
         padding: $input-padding;
-        border: $input-border-width solid $input-border-color;
-        border-radius: $input-radius;
+        border: none;
+        border-bottom: 1px solid $white;
+        background: transparent;
+        color: $white;
 
         &:focus {
             border-color: $input-border-color-focus;
@@ -496,8 +498,10 @@ input[type='file'] {
     text-transform: uppercase;
     color: $black;
     background: $secondary;
-    padding: 20px 40px;
+    padding: 13.5px 40px;
     letter-spacing: 2px;
+    border: none;
+    min-width: 195px;
 
     @include hover() {
         cursor: pointer;

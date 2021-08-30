@@ -2,25 +2,25 @@
 	"about": [
 		{
 			"id": 1,
-			"icon": "images/about/about-01.svg",
+			"icon": "bulb",
 			"title": "Title goes here",
 			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
 		},
 		{
 			"id": 2,
-			"icon": "images/about/about-02.svg",
+			"icon": "pen",
 			"title": "Title goes here",
 			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
 		},
 		{
 			"id": 3,
-			"icon": "images/about/about-03.svg",
+			"icon": "detail",
 			"title": "Title goes here",
 			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
 		},
 		{
 			"id": 4,
-			"icon": "images/about/about-04.svg",
+			"icon": "computer",
 			"title": "Title goes here",
 			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
 		}
@@ -65,6 +65,82 @@
 			"target": "",
 			"cssClass": "",
 			"items": []
+		}
+	],
+	"portfolio": [
+		{
+			"id": 1,
+			"image": "images/portfolio/portfolio-01.png",
+			"title": "Title goes here",
+			"description": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 2,
+			"image": "images/portfolio/portfolio-02.png",
+			"title": "Title goes here",
+			"description": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 3,
+			"image": "images/portfolio/portfolio-03.png",
+			"title": "Title goes here",
+			"description": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 4,
+			"image": "images/portfolio/portfolio-04.png",
+			"title": "Title goes here",
+			"description": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 5,
+			"image": "images/portfolio/portfolio-05.png",
+			"title": "Title goes here",
+			"description": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 6,
+			"image": "images/portfolio/portfolio-06.png",
+			"title": "Title goes here",
+			"description": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 7,
+			"image": "images/portfolio/portfolio-07.png",
+			"title": "Title goes here",
+			"description": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 8,
+			"image": "images/portfolio/portfolio-08.png",
+			"title": "Title goes here",
+			"description": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		}
+	],
+	"services": [
+		{
+			"id": 1,
+			"icon": "globe",
+			"title": "Title goes here",
+			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 2,
+			"icon": "lupa",
+			"title": "Title goes here",
+			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 3,
+			"icon": "clock",
+			"title": "Title goes here",
+			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
+		},
+		{
+			"id": 4,
+			"icon": "schedule",
+			"title": "Title goes here",
+			"text": "onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag."
 		}
 	]
 }

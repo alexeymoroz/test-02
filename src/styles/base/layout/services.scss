@@ -1,0 +1,58 @@
+@import '../../partials';
+
+.services {
+    display: flex;
+    color: $gray;
+    
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        margin-bottom: -50px;
+        max-width: 445px;
+    }
+
+    &__text {
+        max-width: 480px;
+        margin-right: 40px;
+    }
+
+    &__icon {
+        font-size: 32px;
+        color: $primary;
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        margin-bottom: 50px;
+
+        @include col(2, 100px);
+    }
+
+    &__title {
+        font-weight: 900;
+    }
+
+    &__description {
+        margin-top: 20px;
+        font-size: 11px;
+        font-weight: 400;
+    }
+}
+
+.section.section--services {
+    background: $yellow;
+    position: relative;
+    overflow: hidden;
+
+    .section__bg {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: url('./../images/services/services-bg.jpg') no-repeat;
+        background-size: cover;
+        opacity: .3;
+    }
+}

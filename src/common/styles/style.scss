@@ -131,7 +131,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    @include bg-filler('../common/images/clouds.svg', cover, bottom center);
 }
 
 .container {
@@ -201,7 +200,6 @@ figure {
     opacity: 0;
     animation: fadeIn 0.8s ease-in-out forwards;
 
-    @include bg-filler('../common/images/developer.svg');
 
     @include ms(lg) {
         display: none;

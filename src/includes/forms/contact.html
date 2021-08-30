@@ -1,0 +1,36 @@
+<form class="form form--contact">
+    <div class="form__main">
+        @@include('components/form/control.html', {
+            "id": "feedback",
+            "type": "",
+            "name": "name",
+            "label": "",
+            "required": false,
+            "placeholder": "Name"
+        })
+
+        @@include('components/form/control.html', {
+            "id": "feedback",
+            "type": "email",
+            "name": "email",
+            "label": "",
+            "required": false,
+            "placeholder": "Email Address"
+        })
+
+        @@include('components/form/control.html', {
+            "id": "feedback",
+            "type": "",
+            "name": "message",
+            "label": "",
+            "required": false,
+            "placeholder": "Message"
+        })
+    </div>
+   
+    <div class="form__footer">
+        @@include('components/form/submit.html', {
+            "text": "Submit"
+        })
+    </div>
+</form>

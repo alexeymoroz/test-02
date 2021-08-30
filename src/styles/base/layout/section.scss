@@ -28,6 +28,13 @@
             font-size: 16px;
             color: #7e8287;
         }
+
+        &--left {
+            &:after {
+                left: 0;
+                transform: translateX(0);
+            }
+        }
     }
 
     &__description {
@@ -37,6 +44,12 @@
         max-width: 885px;
         margin-left: auto;
         margin-right: auto;
+        color: $gray;
+        line-height: 41px;
+
+        &--short {
+            max-width: 645px;
+        }
 
         span {
             font-weight: 900;
