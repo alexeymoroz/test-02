@@ -7,7 +7,6 @@ $('.wysiwyg table').wrap('<div class="table-wrapper"><div class="table-inner"></
 $.fn.initFormListeners();
 
 // lazy loading
-$('.js-lazy').initLazyLoading();
 
 
 // fancybox

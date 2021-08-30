@@ -9,4 +9,3 @@ if ($.fn.datepicker) {
 };
 
 @@include('partials/form.js')
-@@include('partials/lazyLoad.js')
